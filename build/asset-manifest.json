@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "/static/js/main.e62f340d.js",
+    "static/js/603.5f46971c.chunk.js": "/static/js/603.5f46971c.chunk.js",
+    "static/js/699.82ae181b.chunk.js": "/static/js/699.82ae181b.chunk.js",
+    "static/js/787.cdcdaea4.chunk.js": "/static/js/787.cdcdaea4.chunk.js",
+    "static/media/cv.pdf": "/static/media/cv.2bd576572672a0ebb325.pdf",
+    "static/media/background.webp": "/static/media/background.3143c73bcd59bb2c051b.webp",
+    "static/media/Caudex-Italic.ttf": "/static/media/Caudex-Italic.4e13ea4aad802f6a223d.ttf",
+    "static/media/Caudex-BoldItalic.ttf": "/static/media/Caudex-BoldItalic.699a8ad7198498cdda46.ttf",
+    "static/media/Ava.png": "/static/media/Ava.57356e34ec5fca598ae5.png",
+    "static/media/Caudex-Bold.ttf": "/static/media/Caudex-Bold.f84a976d40af02bfa3b8.ttf",
+    "static/media/Caudex-Regular.ttf": "/static/media/Caudex-Regular.a3acee724ebca0ebe6da.ttf",
+    "static/media/Caveat-SemiBold.ttf": "/static/media/Caveat-SemiBold.9071e6acec209f6fd083.ttf",
+    "static/media/Caveat-Medium.ttf": "/static/media/Caveat-Medium.d6f39573695ef26eea71.ttf",
+    "static/media/Caveat-Bold.ttf": "/static/media/Caveat-Bold.4c36c657c1aad1088359.ttf",
+    "static/media/Caveat-Regular.ttf": "/static/media/Caveat-Regular.ff4921b17fd01391c043.ttf",
+    "static/media/LogoThanhNguyen.svg": "/static/media/LogoThanhNguyen.950dbfea1b3d000ed0930f67faa7d1bb.svg",
+    "static/media/insta.svg": "/static/media/insta.6a8cc6eafdc5cc2f3c45b35a456be96a.svg",
+    "static/media/linkedIn.svg": "/static/media/linkedIn.a9221b04547728bba081b63193b67486.svg",
+    "static/media/mail.svg": "/static/media/mail.53f4c02b329e2a9f388dbf592c9d1be8.svg",
+    "index.html": "/index.html",
+    "main.e62f340d.js.map": "/static/js/main.e62f340d.js.map",
+    "603.5f46971c.chunk.js.map": "/static/js/603.5f46971c.chunk.js.map",
+    "699.82ae181b.chunk.js.map": "/static/js/699.82ae181b.chunk.js.map",
+    "787.cdcdaea4.chunk.js.map": "/static/js/787.cdcdaea4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e62f340d.js"
+  ]
+}

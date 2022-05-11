@@ -41,7 +41,7 @@ const Home = () => {
 
         <Bio>
           Due to designing passion, I’ve decided to change my career path from a specialist in
-          logistics field into a UX/UI designer.{' '}
+          logistics field into a UX/UI designer.
         </Bio>
 
         <Quote>“Design creates culture. Culture shapes values. Values determine the future.”</Quote>
