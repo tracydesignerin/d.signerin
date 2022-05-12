@@ -14,9 +14,12 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "tracydesignerin.github.io -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
