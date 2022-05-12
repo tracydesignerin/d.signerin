@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import '../assets/fonts/Caudex/Caudex-Bold.ttf';
-import '../assets/fonts/Caudex/Caudex-BoldItalic.ttf';
-import '../assets/fonts/Caudex/Caudex-Italic.ttf';
-import '../assets/fonts/Caudex/Caudex-Regular.ttf';
-import '../assets/fonts/Caveat/Caveat-Bold.ttf';
-import '../assets/fonts/Caveat/Caveat-Medium.ttf';
-import '../assets/fonts/Caveat/Caveat-Regular.ttf';
-import '../assets/fonts/Caveat/Caveat-SemiBold.ttf';
+import CaudexRegular from '../assets/fonts/Caudex/Caudex-Regular.ttf';
+import CaveatRegular from '../assets/fonts/Caveat/Caveat-Regular.ttf';
 import backgroundWEBP from '../assets/images/background.webp';
 
 export const GlobalStyles = createGlobalStyle`
@@ -27,15 +21,15 @@ export const GlobalStyles = createGlobalStyle`
 
     @font-face {
         font-family: 'Caudex';
-        src: local('Caudex'), url('../assets/fonts/Caudex/Caudex-Regular.ttf') format('truetype');
+        src:  url(${CaudexRegular}) format('truetype');
     }
     
     @font-face {
         font-family: 'Caveat';
-        src: local('Caveat'), url('../assets/fonts/Caveat/Caveat-Regular.ttf') format('truetype');
+        src:  url(${CaveatRegular}) format('truetype');
     }
 
-    font-family: 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Caudex', 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
