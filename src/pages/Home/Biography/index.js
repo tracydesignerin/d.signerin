@@ -68,7 +68,7 @@ export const Biography = () => {
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  width: 100%
+  width: 100%;
 `;
 
 const MyPicture = styled.div`

@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import CaudexRegular from '../assets/fonts/Caudex/Caudex-Regular.ttf';
 import CaveatRegular from '../assets/fonts/Caveat/Caveat-Regular.ttf';
+import InriaSansRegular from '../assets/fonts/Inria_Sans/InriaSans-Regular.ttf';
 import backgroundWEBP from '../assets/images/background.webp';
 
 export const GlobalStyles = createGlobalStyle`
@@ -8,6 +9,8 @@ export const GlobalStyles = createGlobalStyle`
   *::after,
   *::before {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
   html{
@@ -15,8 +18,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-
-    margin: 0 3rem;
     min-height: 100vh;
 
     @font-face {
@@ -28,8 +29,13 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Caveat';
         src:  url(${CaveatRegular}) format('truetype');
     }
+    
+    @font-face {
+        font-family: 'Inria Sans';
+        src:  url(${InriaSansRegular}) format('truetype');
+    }
 
-    font-family: 'Caudex', 'Caveat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Caudex', 'Caveat', 'Inria Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
