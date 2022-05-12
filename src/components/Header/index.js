@@ -37,8 +37,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 5rem;
+  margin: 0 3rem 2rem 3rem;
 `;
 
 const Logo = styled.div`

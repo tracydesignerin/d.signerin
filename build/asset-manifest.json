@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.js": "/static/js/main.acae154b.js",
-    "static/js/718.ea52314a.chunk.js": "/static/js/718.ea52314a.chunk.js",
+    "main.js": "/static/js/main.b8655b51.js",
+    "static/js/488.21bc4dd7.chunk.js": "/static/js/488.21bc4dd7.chunk.js",
     "static/js/699.82ae181b.chunk.js": "/static/js/699.82ae181b.chunk.js",
     "static/js/787.cdcdaea4.chunk.js": "/static/js/787.cdcdaea4.chunk.js",
     "static/media/cv.pdf": "/static/media/cv.2bd576572672a0ebb325.pdf",
     "static/media/background.webp": "/static/media/background.3143c73bcd59bb2c051b.webp",
+    "static/media/wallPaint.svg": "/static/media/wallPaint.f9e06044352f4b52ff6afa7019f0d60e.svg",
     "static/media/Ava.png": "/static/media/Ava.57356e34ec5fca598ae5.png",
     "static/media/Caudex-Regular.ttf": "/static/media/Caudex-Regular.a3acee724ebca0ebe6da.ttf",
     "static/media/Caveat-Regular.ttf": "/static/media/Caveat-Regular.ff4921b17fd01391c043.ttf",
+    "static/media/InriaSans-Regular.ttf": "/static/media/InriaSans-Regular.b8aeafc1e24f5145aab6.ttf",
     "static/media/LogoThanhNguyen.svg": "/static/media/LogoThanhNguyen.950dbfea1b3d000ed0930f67faa7d1bb.svg",
+    "static/media/logisticShip.svg": "/static/media/logisticShip.d8d9b923337945f096085f220ca25f34.svg",
+    "static/media/sappchat.svg": "/static/media/sappchat.724cd7331ccf51d747f47c7edc4a66aa.svg",
+    "static/media/phone.svg": "/static/media/phone.6520c5c6e805c18e53d109b5998d4395.svg",
     "static/media/insta.svg": "/static/media/insta.6a8cc6eafdc5cc2f3c45b35a456be96a.svg",
     "static/media/linkedIn.svg": "/static/media/linkedIn.a9221b04547728bba081b63193b67486.svg",
     "static/media/mail.svg": "/static/media/mail.53f4c02b329e2a9f388dbf592c9d1be8.svg",
+    "static/media/email.svg": "/static/media/email.e4a2c4a2dcc12ed69d0834a1a48ec22e.svg",
     "index.html": "/index.html",
-    "main.acae154b.js.map": "/static/js/main.acae154b.js.map",
-    "718.ea52314a.chunk.js.map": "/static/js/718.ea52314a.chunk.js.map",
+    "static/media/location.svg": "/static/media/location.425a2b6d49a50d7e387e948f4bf81a3d.svg",
+    "main.b8655b51.js.map": "/static/js/main.b8655b51.js.map",
+    "488.21bc4dd7.chunk.js.map": "/static/js/488.21bc4dd7.chunk.js.map",
     "699.82ae181b.chunk.js.map": "/static/js/699.82ae181b.chunk.js.map",
     "787.cdcdaea4.chunk.js.map": "/static/js/787.cdcdaea4.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.acae154b.js"
+    "static/js/main.b8655b51.js"
   ]
 }

@@ -36,7 +36,7 @@ export const Contact = () => {
 };
 
 const Wrapper = styled.div`
-  margin-top: calc(250px + 3rem);
+
   padding: 2rem;
   background-color: #a37e48;
   display: flex;
