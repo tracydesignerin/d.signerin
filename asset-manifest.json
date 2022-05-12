@@ -1,17 +1,28 @@
 {
   "files": {
-    "main.js": "/static/js/main.b8655b51.js",
-    "static/js/488.21bc4dd7.chunk.js": "/static/js/488.21bc4dd7.chunk.js",
-    "static/js/699.82ae181b.chunk.js": "/static/js/699.82ae181b.chunk.js",
+    "main.js": "/static/js/main.92b25918.js",
+    "static/js/488.664ca735.chunk.js": "/static/js/488.664ca735.chunk.js",
+    "static/js/767.ec6d2900.chunk.js": "/static/js/767.ec6d2900.chunk.js",
     "static/js/787.cdcdaea4.chunk.js": "/static/js/787.cdcdaea4.chunk.js",
     "static/media/cv.pdf": "/static/media/cv.2bd576572672a0ebb325.pdf",
     "static/media/background.webp": "/static/media/background.3143c73bcd59bb2c051b.webp",
+    "static/media/logisticsShip.png": "/static/media/logisticsShip.30afb6b3a0e89ab1927a.png",
+    "static/media/designProcess.png": "/static/media/designProcess.91c0c1833693661f51e4.png",
+    "static/media/wallPainting.png": "/static/media/wallPainting.86d38675d99d98b9c855.png",
     "static/media/wallPaint.svg": "/static/media/wallPaint.f9e06044352f4b52ff6afa7019f0d60e.svg",
+    "static/media/sappchat.png": "/static/media/sappchat.7fe51bcbf254fab3a0c6.png",
     "static/media/Ava.png": "/static/media/Ava.57356e34ec5fca598ae5.png",
     "static/media/Caudex-Regular.ttf": "/static/media/Caudex-Regular.a3acee724ebca0ebe6da.ttf",
+    "static/media/userJourney.png": "/static/media/userJourney.efb3fe3e3e9b69b73374.png",
     "static/media/Caveat-Regular.ttf": "/static/media/Caveat-Regular.ff4921b17fd01391c043.ttf",
+    "static/media/sappchatIllu.png": "/static/media/sappchatIllu.25ba93f3aceeecbad4fb.png",
+    "static/media/persona2.png": "/static/media/persona2.c2bd1f8dca46d5fd950f.png",
+    "static/media/persona.png": "/static/media/persona.9999bc4cb18af088d24e.png",
+    "static/media/sappchatFlow.png": "/static/media/sappchatFlow.d164f28d9645b61fe8cd.png",
     "static/media/InriaSans-Regular.ttf": "/static/media/InriaSans-Regular.b8aeafc1e24f5145aab6.ttf",
+    "static/media/Krub-Regular.ttf": "/static/media/Krub-Regular.d96a27ce3985ee49b782.ttf",
     "static/media/LogoThanhNguyen.svg": "/static/media/LogoThanhNguyen.950dbfea1b3d000ed0930f67faa7d1bb.svg",
+    "static/media/apUserFlow.png": "/static/media/apUserFlow.5f5e3cd5d40c823dcdbc.png",
     "static/media/logisticShip.svg": "/static/media/logisticShip.d8d9b923337945f096085f220ca25f34.svg",
     "static/media/sappchat.svg": "/static/media/sappchat.724cd7331ccf51d747f47c7edc4a66aa.svg",
     "static/media/phone.svg": "/static/media/phone.6520c5c6e805c18e53d109b5998d4395.svg",
@@ -21,12 +32,12 @@
     "static/media/email.svg": "/static/media/email.e4a2c4a2dcc12ed69d0834a1a48ec22e.svg",
     "index.html": "/index.html",
     "static/media/location.svg": "/static/media/location.425a2b6d49a50d7e387e948f4bf81a3d.svg",
-    "main.b8655b51.js.map": "/static/js/main.b8655b51.js.map",
-    "488.21bc4dd7.chunk.js.map": "/static/js/488.21bc4dd7.chunk.js.map",
-    "699.82ae181b.chunk.js.map": "/static/js/699.82ae181b.chunk.js.map",
+    "main.92b25918.js.map": "/static/js/main.92b25918.js.map",
+    "488.664ca735.chunk.js.map": "/static/js/488.664ca735.chunk.js.map",
+    "767.ec6d2900.chunk.js.map": "/static/js/767.ec6d2900.chunk.js.map",
     "787.cdcdaea4.chunk.js.map": "/static/js/787.cdcdaea4.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b8655b51.js"
+    "static/js/main.92b25918.js"
   ]
 }
