@@ -1,21 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ProjectCard = (props) => {
   const { id, icon, projectName, projectType, projectDescription, background } = props;
 
   return (
-    <Wrapper className={`projectCard-${id}`} style={{ backgroundColor: background }}>
-      <ProjectIcon>
-        {icon}
-        <ProjectName>{projectName}</ProjectName>
-      </ProjectIcon>
+    <CustomLink to={`/projects/${id}`}>
+      <Wrapper className={`projectCard-${id}`} style={{ backgroundColor: background }}>
+        <ProjectIcon>
+          {icon}
+          <ProjectName>{projectName}</ProjectName>
+        </ProjectIcon>
 
-      <ProjectBrief>
-        <Type>{projectType}</Type>
-        <Description>{projectDescription}</Description>
-      </ProjectBrief>
-    </Wrapper>
+        <ProjectBrief>
+          <Type>{projectType}</Type>
+          <Description>{projectDescription}</Description>
+        </ProjectBrief>
+      </Wrapper>
+    </CustomLink>
   );
 };
 
@@ -33,8 +36,8 @@ const Wrapper = styled.div`
   transition: 275ms;
   cursor: pointer;
 
-  &:hover{
-    box-shadow: -4px 4px 4px  rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(-10px);
     z-index: 3;
   }
@@ -67,4 +70,12 @@ const Description = styled.p`
   font-family: 'Caudex';
   text-align: center;
   font-size: 1.25rem;
+`;
+
+const CustomLink = styled(Link)`
+  color: inherit !important;
+
+  &:hover {
+    color: inherit !important;
+  }
 `;

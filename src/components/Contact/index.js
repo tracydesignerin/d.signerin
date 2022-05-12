@@ -6,7 +6,7 @@ import { ReactComponent as Phone } from '../../assets/icons/phone.svg';
 
 export const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper id='contact'>
       <Name>Ha Thanh, Nguyen</Name>
 
       <Contacts>

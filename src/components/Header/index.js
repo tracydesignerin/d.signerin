@@ -9,24 +9,20 @@ export const Header = () => {
   return (
     <Wrapper>
       <Logo>
-        <img src={LogoTracy} alt="tracyd.signerin" />
+        <Link to="/">
+          <img src={LogoTracy} alt="tracyd.signerin" />
+        </Link>
       </Logo>
 
       <Nav>
         <NavItem isOpen={location.pathname === '/'}>
-          <Link to="/">
-            About Me
-          </Link>
+          <Link to="/">About Me</Link>
         </NavItem>
-        <NavItem isOpen={location.pathname === '/projects'}>
-          <Link to="/projects">
-            My Projects
-          </Link>
+        <NavItem isOpen={location.pathname.includes('/projects')}>
+          <Link to="/projects">My Projects</Link>
         </NavItem>
-        <NavItem isOpen={location.pathname === '/contact'}>
-          <Link to="/contact">
-            Contact Me
-          </Link>
+        <NavItem isOpen={location.pathname.includes('/contact')}>
+          <a href="#contact">Contact Me</a>
         </NavItem>
       </Nav>
     </Wrapper>
