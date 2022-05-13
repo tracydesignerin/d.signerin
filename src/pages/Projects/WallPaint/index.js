@@ -10,7 +10,7 @@ export const WallPaint = () => {
         <Title>DIY PROJECT</Title>
         <span>
           Being an aesthetic and creative person, I came up with ideas and painted the wall in my
-          working area at my home which I called “my cave”
+          working area at my home which I called “my cave”.
         </span>
       </Brief>
       <Project>
@@ -18,9 +18,10 @@ export const WallPaint = () => {
           <Brief className="indented">
             <Title>Project Overview</Title>
             <span style={{ fontStyle: 'normal' }}>
-              In 2021, we decided to create a reputation for our home which I and my husband will
-              live for the next 5 year at least. This room was used to use as a warehouse. The style
-              of this painting was inspired by “geometric art” and finished after 3 days.
+              In 2021, we decided to create a "creative working space" in our home, which my husband
+              and I will spend time working here for the next 5 year. Prior to this, the room was
+              only a storage unit. The paint style was inspired by “geometric art” and we finished
+              the whole thing after 3 days.
             </span>
           </Brief>
           <br />
@@ -45,7 +46,7 @@ export const WallPaint = () => {
         </Down>
       </Project>
 
-      <Brief className="indented" style={{ marginTop: '2rem', width: 'unset' }}>
+      <Brief className="indented" style={{ marginTop: '2rem', marginLeft: '2rem', width: 'unset' }}>
         <Title>Design Process</Title>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <img style={{ margin: '1rem 0' }} src={DesignProcess} alt="ap-sprint" />
@@ -85,7 +86,7 @@ const Project = styled.div`
   display: grid;
   grid-template-rows: auto auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 1rem;
 
   margin-top: 2rem;

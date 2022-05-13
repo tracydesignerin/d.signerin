@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import MyProfilePic from '../../../assets/images/Ava.png';
 import { ReactComponent as LinkedInIcon } from '../../../assets/icons/socials/linkedIn.svg';
 import { ReactComponent as InstaIcon } from '../../../assets/icons/socials/insta.svg';
@@ -71,16 +71,54 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+const slidein = keyframes`
+  from {
+      margin-left: -300%;
+  }
+
+  to {
+      margin-left: 0%;
+  }`;
+
 const MyPicture = styled.div`
   img {
+    /* for chrome and safari*/
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: ${slidein};
+
+    /*for firefox*/
+    -moz-animation-duration: 1s;
+    -moz-animation-name: ${slidein};
+
+    /* for opera*/
+    -o-animation-duration: 1s;
+    -o-animation-name: ${slidein};
+
+    /* Standard syntax*/
+    animation-duration: 1s;
+    animation-name: ${slidein};
+
     width: 400px;
     height: 400px;
     filter: drop-shadow(16px 16px 4px rgba(125, 83, 40, 0.55));
   }
 `;
 
+const fadeInAnimation = keyframes`
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+`;
+
 const MyBio = styled.div`
   width: 400px;
+
+  animation: ${fadeInAnimation} ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 `;
 
 const Greeting = styled.p`

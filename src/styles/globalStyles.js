@@ -77,6 +77,11 @@ export const GlobalStyles = createGlobalStyle`
   p {
       margin: 0;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+    
+  }
   `;
 
 export const CustomLink = styled.a`

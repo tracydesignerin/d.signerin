@@ -19,7 +19,7 @@ const Projects = () => {
       image: Sappchat,
       projectName: 'S-Chat',
       projectType: 'Mobile Chat App',
-      projectDescription: 'NEW CONFIGURATION OF S-Chat',
+      projectDescription: 'NEW CONFIGURATION OF S-CHAT',
     },
     {
       id: 2,

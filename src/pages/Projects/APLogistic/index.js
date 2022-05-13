@@ -26,7 +26,7 @@ export const APLogistic = () => {
               AP Logistics Company was established in 2013. Till now they had their website already
               but not mobile app. They intend to spread their service introduction to customers
               through a friendly and usefull app. Customers can update latest news about market
-              trend, book their new shipments and tracking their departed shipment also.
+              trend, book their new shipments and track their departed shipment also.
             </span>
           </Brief>
           <br />
@@ -57,19 +57,21 @@ export const APLogistic = () => {
       <Brief className="indented" style={{ margin: '2rem' }}>
         <CustomLink
           style={{ textDecoration: 'underline' }}
-          href="https://www.figma.com/file/k1SQUmcwbYH8mj1g4gL4Uq/Sappchat-Setting?node-id=0%3A1"
+          href="https://www.figma.com/file/On7DjP8pjZU2fhpKY9J0xg/AP-Logistics-App?node-id=0%3A1"
           target="_blank"
           rel="noopen noreferrer"
         >
           CHECK THE WIREFRAME HERE!
         </CustomLink>
       </Brief>
-      <Brief className="indented">
+      <Brief className="indented design-sprint" style={{ width: 'unset', marginTop: '1rem' }}>
         <Title>Design Sprint</Title>
-        <img style={{ margin: '1rem 0' }} src={DesignSprint} alt="ap-sprint" />
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img style={{ margin: '1rem 0' }} src={DesignSprint} alt="ap-sprint" />
+        </div>
       </Brief>
 
-      <Brief className="indented">
+      <Brief className="indented" style={{ width: 'unset', marginTop: '1rem' }}>
         <Title>Personas</Title>
         <Personas>
           <Persona>
@@ -88,7 +90,7 @@ export const APLogistic = () => {
         </div>
       </Brief>
 
-      <Brief className="indented" style={{ width: 'unset', marginTop: '1rem' }}>
+      <Brief className="indented user-flow" style={{ width: 'unset', marginTop: '1rem' }}>
         <Title>USER FLOW</Title>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <img src={APFlow} alt="ap-flow" />
@@ -104,6 +106,15 @@ const Wrapper = styled.div`
   .indented {
     margin-left: 2rem;
     width: 450px;
+  }
+
+  @media (max-width: 1024px) {
+    .design-sprint,
+    .user-flow {
+      img {
+        width: 100%;
+      }
+    }
   }
 `;
 
@@ -138,7 +149,7 @@ const Project = styled.div`
 const Up = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  gap: 10%;
 `;
 
 const Down = styled.div``;
@@ -146,8 +157,16 @@ const Down = styled.div``;
 const Personas = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
-const Persona = styled.div``;
+const Persona = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

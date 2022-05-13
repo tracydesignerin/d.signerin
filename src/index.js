@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from './styles/themeProvider';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-
+import ScrollToTop from './scrollToTop';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +11,8 @@ root.render(
   <React.StrictMode>
     <ThemeProvider>
       <BrowserRouter>
-        <App />
+        <ScrollToTop />
+          <App />
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,

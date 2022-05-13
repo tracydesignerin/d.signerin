@@ -10,7 +10,7 @@ export const Header = () => {
     <Wrapper>
       <Logo>
         <Link to="/">
-          <img src={LogoTracy} alt="tracyd.signerin" />
+          <img className="pageLogo" src={LogoTracy} alt="tracyd.signerin" />
         </Link>
       </Logo>
 
@@ -34,6 +34,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 3rem 2rem 3rem;
+
+  @media (max-width: 1024px) {
+    .pageLogo {
+      width: 60%;
+    }
+  }
 `;
 
 const Logo = styled.div`
@@ -53,5 +59,11 @@ const NavItem = styled.div`
     font-size: 24px;
 
     color: ${(p) => p.isOpen && '#9A6D36'};
+  }
+
+  @media (max-width: 1024px) {
+    a {
+      font-size: 20px;
+    }
   }
 `;

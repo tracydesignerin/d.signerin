@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import SChatIllu from '../../../assets/images/projects/sappchatIllu.png';
 import SChatFlow from '../../../assets/images/projects/sappchatFlow.png';
 import Typography from '../../../assets/images/projects/typography.png';
@@ -21,7 +21,7 @@ export const Sappchat = () => {
       <Brief>
         <Title>UX/UI</Title>
         <span>
-          The Sappchat app had been published since 2021. My task now is creating a new version of
+          The S-Chat app had been published since 2021. My task now is creating a new version of
           this app’s UX/UI design which will be launched in June, 2022
         </span>
       </Brief>
@@ -31,8 +31,8 @@ export const Sappchat = () => {
           <Brief className="indented">
             <Title>Project Overview</Title>
             <span style={{ fontStyle: 'normal' }}>
-              The Sappchat app had been published since 2021. My task now is creating a new version
-              of this app’s UX/UI design which will be launched in June, 2022
+              S-chat is one of the first Decentralized Messaging Apps meets Decentralized Banking
+              powered by Blockchain and Artificial Intelligence Technology.
             </span>
           </Brief>
           <br />
@@ -40,15 +40,16 @@ export const Sappchat = () => {
           <Brief className="indented">
             <Title>Scope of work</Title>
             <span style={{ fontStyle: 'normal' }}>
-              The Sappchat app had been published since 2021. My task now is creating a new version
-              of this app’s UX/UI design which will be launched in June, 2022
+              Since this app had been launched in 2021 which had UI identification already, I focus
+              on designing new configuration version. Till now, I’ve finished “Log in” and
+              “Settings” screen
             </span>
           </Brief>
 
           <Brief className="indented" style={{ marginTop: '2rem' }}>
             <CustomLink
               style={{ textDecoration: 'underline' }}
-              href="https://www.figma.com/file/k1SQUmcwbYH8mj1g4gL4Uq/Sappchat-Setting?node-id=0%3A1"
+              href="https://www.figma.com/file/k1SQUmcwbYH8mj1g4gL4Uq/S-chat-Setting?node-id=0%3A1"
               target="_blank"
               rel="noopen noreferrer"
             >
@@ -58,13 +59,15 @@ export const Sappchat = () => {
         </Left>
 
         <Right>
-          <img src={SChatIllu} alt="illu" />
+          <img id="illu" src={SChatIllu} alt="illu" />
         </Right>
       </Project>
 
-      <Brief className="indented">
+      <Brief className="indented user-flow" style={{ width: 'unset' }}>
         <Title>USER FLOW</Title>
-        <img style={{ margin: '1rem 0' }} src={SChatFlow} alt="s-chat-flow" />
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img style={{ margin: '1rem 0' }} src={SChatFlow} alt="s-chat-flow" />
+        </div>
       </Brief>
 
       <Other>
@@ -107,6 +110,14 @@ const Wrapper = styled.div`
     margin-left: 2rem;
     width: 450px;
   }
+
+  @media (max-width: 1024px) {
+    .user-flow {
+      img {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 const Brief = styled.div`
@@ -129,19 +140,50 @@ const Title = styled.p`
 
 const Project = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 500px auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 10%;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
 `;
 
 const Left = styled.div``;
 
-const Right = styled.div``;
+const MoveUpDown = keyframes`
+    0%, 100% {
+      bottom: 0px;
+    }
+    50% {
+      bottom: 30px;
+    }
+    `;
+
+const Right = styled.div`
+  #illu {
+    animation: ${MoveUpDown} 2.5s linear infinite;
+    position: relative;
+    bottom: 0px;
+  }
+`;
 
 const Other = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 2rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    justify-content: center;
+
+    .indented {
+      margin-left: 0;
+    }
+  }
 `;
 
 const Colors = styled.div`
