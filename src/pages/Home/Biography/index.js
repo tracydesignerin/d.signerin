@@ -69,6 +69,14 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 const slidein = keyframes`
@@ -101,6 +109,11 @@ const MyPicture = styled.div`
     width: 400px;
     height: 400px;
     filter: drop-shadow(16px 16px 4px rgba(125, 83, 40, 0.55));
+
+    @media (max-width: 768px) {
+      width: 300px;
+      height: 300px;
+    }
   }
 `;
 
@@ -124,6 +137,14 @@ const MyBio = styled.div`
 const Greeting = styled.p`
   font-family: 'Caveat';
   font-size: 56px;
+
+  @media (max-width: 768px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 425px) {
+      text-align: center;
+    }
 `;
 
 const Bio = styled.div`
@@ -131,6 +152,14 @@ const Bio = styled.div`
   font-size: 20px;
   padding-left: 42px;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0;
+  }
 `;
 
 const Quote = styled.div`
@@ -139,6 +168,10 @@ const Quote = styled.div`
   font-style: italic;
   padding-left: 42px;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const Author = styled.div`

@@ -79,9 +79,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @media (max-width: 1024px) {
-    font-size: 20px;
-    
+    font-size: 20px;  
   }
+  
   `;
 
 export const CustomLink = styled.a`

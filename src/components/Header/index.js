@@ -40,17 +40,40 @@ const Wrapper = styled.div`
       width: 60%;
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 425px) {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
 `;
 
 const Logo = styled.div`
   img {
     cursor: pointer;
   }
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 `;
 
 const Nav = styled.div`
   display: flex;
   gap: 3rem;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+    width: 60%;
+  }
+
+  @media (max-width: 425px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const NavItem = styled.div`

@@ -54,7 +54,7 @@ export const APLogistic = () => {
           </Brief>
         </Down>
       </Project>
-      <Brief className="indented" style={{ margin: '2rem' }}>
+      <Brief className="indented check-link">
         <CustomLink
           style={{ textDecoration: 'underline' }}
           href="https://www.figma.com/file/On7DjP8pjZU2fhpKY9J0xg/AP-Logistics-App?node-id=0%3A1"
@@ -67,7 +67,7 @@ export const APLogistic = () => {
       <Brief className="indented design-sprint" style={{ width: 'unset', marginTop: '1rem' }}>
         <Title>Design Sprint</Title>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img style={{ margin: '1rem 0' }} src={DesignSprint} alt="ap-sprint" />
+          <img src={DesignSprint} alt="ap-sprint" style={{ margin: '1rem 0', width: '100%' }} />
         </div>
       </Brief>
 
@@ -75,10 +75,10 @@ export const APLogistic = () => {
         <Title>Personas</Title>
         <Personas>
           <Persona>
-            <img src={Persona1} alt="persona-1" />
+            <img src={Persona1} alt="persona-1" style={{ width: '100%' }} />
           </Persona>
           <Persona>
-            <img src={Persona2} alt="persona-2" />
+            <img src={Persona2} alt="persona-2" style={{ width: '100%' }} />
           </Persona>
         </Personas>
       </Brief>
@@ -86,7 +86,7 @@ export const APLogistic = () => {
       <Brief className="indented" style={{ width: 'unset', marginTop: '1rem' }}>
         <Title>USER JOURNEY MAP</Title>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img src={UserJourney} alt="ap-sprint" />
+          <img src={UserJourney} alt="ap-sprint" style={{ width: '100%' }} />
         </div>
       </Brief>
 
@@ -105,7 +105,20 @@ const Wrapper = styled.div`
 
   .indented {
     margin-left: 2rem;
-    width: 450px;
+    width: 40%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .check-link {
+    margin: 2rem;
+
+    @media (max-width: 768px) {
+      margin: 2rem 0;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -116,16 +129,25 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  h3 {
+    @media (max-width: 425px) {
+      font-size: 24px !important;
+    }
+  }
 `;
 
 const Brief = styled.div`
   margin-top: 0.5rem;
-  width: 700px;
 
   span {
     font-size: 20px;
     letter-spacing: 0.1px;
     font-style: italic;
+
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -134,6 +156,10 @@ const Title = styled.p`
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
 `;
 
 const Project = styled.div`
@@ -149,7 +175,10 @@ const Project = styled.div`
 const Up = styled.div`
   display: flex;
   width: 100%;
-  gap: 10%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Down = styled.div``;

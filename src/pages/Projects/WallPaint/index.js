@@ -24,8 +24,6 @@ export const WallPaint = () => {
               the whole thing after 3 days.
             </span>
           </Brief>
-          <br />
-
           <Brief className="indented">
             <Title>Scope of work</Title>
             <span style={{ fontStyle: 'normal' }}>
@@ -49,7 +47,7 @@ export const WallPaint = () => {
       <Brief className="indented" style={{ marginTop: '2rem', marginLeft: '2rem', width: 'unset' }}>
         <Title>Design Process</Title>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img style={{ margin: '1rem 0' }} src={DesignProcess} alt="ap-sprint" />
+          <img style={{ margin: '1rem 0', width: '100%' }} src={DesignProcess} alt="ap-sprint"/>
         </div>
       </Brief>
     </Wrapper>
@@ -60,18 +58,30 @@ const Wrapper = styled.div`
 
   .indented {
     margin-left: 2rem;
-    width: 450px;
+
+    @media (max-width: 425px) {
+      margin: 0
+    }
+  }
+
+  h3 {
+    @media (max-width: 425px) {
+      font-size: 24px !important;
+    }
   }
 `;
 
 const Brief = styled.div`
   margin-top: 0.5rem;
-  width: 700px;
 
   span {
     font-size: 20px;
     letter-spacing: 0.1px;
     font-style: italic;
+
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -80,6 +90,10 @@ const Title = styled.p`
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
 `;
 
 const Project = styled.div`
@@ -93,9 +107,14 @@ const Project = styled.div`
 `;
 
 const Up = styled.div`
-  display: flex;
+  display: grid;
   width: 100%;
-  justify-content: space-between;
+  grid-template-columns: auto auto;
+
+  @media (max-width: 425px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
 `;
 
 const Down = styled.div``;

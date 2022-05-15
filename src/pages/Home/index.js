@@ -23,4 +23,8 @@ const Wrapper = styled.div`
   flex-direction: column;
 
   margin-bottom: calc(250px + 3rem);
+
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
 `;

@@ -36,4 +36,8 @@ export const Project = () => {
 const Wrapper = styled.div`
   min-height: calc(100vh - 300px);
   margin: 0 6rem 4rem 6rem;
+
+  @media (max-width: 768px) {
+    margin: 0 3rem 4rem 3rem;
+  }
 `;

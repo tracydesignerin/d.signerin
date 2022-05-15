@@ -58,6 +58,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin: 3rem;
+  }
 `;
 
 const Greeting = styled.p`
@@ -98,4 +102,20 @@ const Projects = styled.div`
         top: 234px;
     }
   }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-top: 1rem;
+    .projectCard-0, .projectCard-1, .projectCard-2{
+      position: inherit;
+    }
+  }
+
+  @media (max-width: 425px) {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+    }
 `;

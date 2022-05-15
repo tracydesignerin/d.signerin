@@ -36,7 +36,6 @@ export const Contact = () => {
 };
 
 const Wrapper = styled.div`
-
   padding: 2rem;
   background-color: #a37e48;
   display: flex;
@@ -50,6 +49,10 @@ const Name = styled.p`
   font-size: 42px;
   color: #fff;
   text-shadow: 0px 4px 4px #000000;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const Contacts = styled.div`
@@ -79,5 +82,9 @@ const Text = styled.div`
     &:hover {
       color: inherit;
     }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 `;
