@@ -36,16 +36,19 @@ const Projects = () => {
 
         <ProjectWrapper>
           {PROJECTS.map((i) => (
-            <Project key={i.id} image={i.image}>
-              <Link to={`/projects/${i.id}`}>
-                <img src={i.image} alt={i.projectName} />
-                <div className="overlay">
-                  <div className="text">
-                    <span>{i.projectDescription}</span>
+            <>
+              <Project key={i.id} image={i.image}>
+              <span className="mobile">{i.projectName}</span>
+                <Link to={`/projects/${i.id}`}>
+                  <img src={i.image} alt={i.projectName} />
+                  <div className="overlay">
+                    <div className="text">
+                      <span>{i.projectDescription}</span>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </Project>
+                </Link>
+              </Project>
+            </>
           ))}
         </ProjectWrapper>
       </Wrapper>
@@ -63,6 +66,14 @@ const Wrapper = styled.div`
 
   align-items: center;
   margin: 0 3rem 3rem 3rem;
+
+  .mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block
+    }
+  }
 `;
 
 const Greeting = styled.p`
@@ -103,6 +114,10 @@ const Project = styled.div`
 
   &:hover .overlay {
     opacity: 0.7;
+
+    @media (max-width: 768px) {
+      opacity: 0;
+    }
   }
 
   .text {
