@@ -46,7 +46,7 @@ export const Sappchat = () => {
             </span>
           </Brief>
 
-          <Brief className="indented" style={{ marginTop: '2rem' }}>
+          <Brief className="indented check-link">
             <CustomLink
               style={{ textDecoration: 'underline' }}
               href="https://www.figma.com/file/k1SQUmcwbYH8mj1g4gL4Uq/S-chat-Setting?node-id=0%3A1"
@@ -95,7 +95,7 @@ export const Sappchat = () => {
           </Brief>
           <Brief style={{ marginTop: '2rem' }}>
             <Title>TYPOGRAPHY</Title>
-            <img src={Typography} alt="typo" />
+            <img src={Typography} alt="typo" styled={{ width: '100%' }} />
           </Brief>
         </Right>
       </Other>
@@ -108,7 +108,19 @@ const Wrapper = styled.div`
 
   .indented {
     margin-left: 2rem;
-    width: 450px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .check-link {
+    margin: 2rem;
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -118,16 +130,26 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  h3 {
+    @media (max-width: 425px) {
+      font-size: 24px !important;
+    }
+  }
 `;
 
 const Brief = styled.div`
   margin-top: 0.5rem;
-  width: 700px;
+  //width: 700px;
 
   span {
     font-size: 20px;
     letter-spacing: 0.1px;
     font-style: italic;
+
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -136,6 +158,10 @@ const Title = styled.p`
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
 `;
 
 const Project = styled.div`
@@ -147,6 +173,10 @@ const Project = styled.div`
   @media (max-width: 1024px) {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+  }
+
+  @media (max-width: 425px) {
+    gap: 1rem;
   }
 `;
 
@@ -166,6 +196,12 @@ const Right = styled.div`
     animation: ${MoveUpDown} 2.5s linear infinite;
     position: relative;
     bottom: 0px;
+
+    @media (max-width: 425px) {
+      animation: none;
+      position: inherit;
+      width: 100%;
+    }
   }
 `;
 
@@ -184,12 +220,28 @@ const Other = styled.div`
       margin-left: 0;
     }
   }
+
+  @media (max-width: 425px) {
+    .indented {
+      margin: 0 2rem;
+      width: unset;
+    }
+
+    ${Right} ${Brief} {
+      margin: 0 2rem;
+    }
+  }
 `;
 
 const Colors = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 72px);
   gap: 1rem;
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(5, auto);
+    gap: 0.5rem;
+  }
 `;
 
 const Color = styled.div`
@@ -205,4 +257,9 @@ const Color = styled.div`
   }
 
   font-size: 20px;
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(5, auto);
+    gap: 0.5rem;
+  }
 `;
